@@ -1,5 +1,6 @@
 package com.whateat.demo.model;
 
+import jakarta.persistence.Basic;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -17,6 +18,7 @@ public class Ingredient {
     @GeneratedValue
     private Integer id;
 
+    @Basic
     private String name;
     private String image;
 }
