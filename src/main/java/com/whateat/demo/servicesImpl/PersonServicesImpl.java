@@ -1,5 +1,7 @@
 package com.whateat.demo.servicesImpl;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.whateat.demo.model.Person;
@@ -18,5 +20,10 @@ public class PersonServicesImpl implements PersonServices {
     @Override
     public void createPerson(Person person) {
         personRepository.save(person);
+    }
+
+    @Override
+    public List<Person> getPersons() {
+        return personRepository.findAll();
     }
 }
