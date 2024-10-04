@@ -18,6 +18,5 @@ public class PersonServicesImpl implements PersonServices {
     @Override
     public void createPerson(Person person) {
         personRepository.save(person);
-        //throw new UnsupportedOperationException("Unimplemented method 'createPerson'");
     }
 }
